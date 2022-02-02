@@ -1,0 +1,109 @@
+*   {
+    margin:0;
+    padding:0;
+    }
+.container-fluid{
+    
+    background-color: black;
+    color: whitesmoke;
+}
+body{
+    
+    font-size: 19px;
+    background-color:#202020;
+    color: whitesmoke;
+    
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+}
+.flexbox{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position:absolute;
+    left: 100px;
+    
+    
+}
+.flexitem{
+    border-color: whitesmoke;
+    border: 1px;
+    display: flex;
+}
+.nav-item:hover{
+    background-color: gray;
+    transition-duration: 0.4s;
+}
+.nav-item:after{
+    opacity: 0;
+  transition: all 0.8s
+}
+.nav-item:active::after{
+    padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.display-4{
+    top: 120px;
+    left: 0;
+    
+}
+
+#container{
+    text-align: center;
+    
+}
+
+#gmaillogo{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    
+}
+.forminp{
+    margin-top: 10px;
+    background-color: gray;
+    border-radius: 10px;
+
+    
+    
+}
+.forminp:hover{
+    border: black 3px solid;
+    transition-duration: 0.4ms;
+}
+::placeholder {
+    color: whitesmoke;
+    padding: 4px;
+    font-size: 14px;;
+}
+#formcontainer{
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    width:400px;
+    position: relative;
+    left: 50%;
+    margin-top: 230px;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+}
+
+#formheader{
+    background-color: gray;
+}
+.subbutton{
+    border-radius: 10px;
+    width: 95px;
+    color: whitesmoke;
+    background-color: black;
+    border: #202020;
+}
+.subbutton:hover
+{
+    background-color: gray;
+    transition-duration: 0.4s;
+}
