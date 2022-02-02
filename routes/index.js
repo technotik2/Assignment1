@@ -4,8 +4,8 @@ var router = express.Router();
 /* GET home page. */
 
 /* GET home page. */
-router.get('/home', function (req, res, next) {
-  res.render('index', { title: 'Home' });
+router.get('/home', function (req, res) {
+  res.render('Home', { title: 'Home' });
 });
 
 /* GET About page. */
@@ -20,7 +20,7 @@ router.get('/services', function(req, res, next) {
 /* GET Products page. */
 router.get('/products', function(req, res, next) {
   res.render('index', { title: 'Products' });
-  console.log("Ss");
+  
 });
 /* GET Contact page. */
 router.get('/contact', function(req, res) {
