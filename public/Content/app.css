@@ -121,3 +121,16 @@ body{
     position: relative;
    
 }
+#propic{
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    margin: 15px;
+}
+#shortpara{
+    margin-top: 25px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size:19px;
+    line-height: 1.69;
+}
