@@ -5,7 +5,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var { body,validationResult } = require('express-validator');
+body('fullname', 'Empty name').trim().isLength({ min: 1 }).escape();
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -39,6 +40,10 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error', { title: 'Error' });
+});
+app.use('/',(req,res,next) => {
+  res.sendFile(path.join(__dirname,'public','index.html'));
+  res.render('Contact', { title: 'Contact' });
 });
 
 module.exports = app;

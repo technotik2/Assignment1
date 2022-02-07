@@ -2,6 +2,7 @@
 <%- include partials/header.ejs %>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <%- include partials/main_nav.ejs %>
+
 <div id="container">
 <h4 style="padding-top: 10px;">My emails</h4>
 <img src="img\gmail.png" id="gmaillogo">
@@ -16,14 +17,14 @@
 <div id="formcontainer">
 <div style="border: 1px black solid; border-radius: 10px; " id="formheader"><h4 style="padding: 10px;">Want me to contact you ? </h4></div>
 
-<form action="/index" method="post">
+<form action="/form" method="post">
     <input type="text" class="forminp" name="fullname" placeholder="Full Name">
     <br>
     <input type="text" class="forminp" name="email" placeholder="Email"><br>
     <input type="text" class="forminp" name="number" placeholder="Phone number">
     <input type="text" class="forminp" name="message" placeholder="Message(300 words)" style="padding-bottom: 150px;">
     <br>
-    <button type="submit" class="subbutton" style="margin-top: 10px;">Send</button>
+    <input type="submit" class="subbutton" id="btns" style="margin-top: 10px; " onclick="s()">
 
 
 
@@ -31,5 +32,27 @@
 </div>
 </div>
 </body>
-<%- include partials/bottom_nav.ejs %>
+<footer>
+
+    <nav class="navbar fixed-bottom navbar-dark">
+      <h6 class="navbar-text" href="#">&nbsp;&copy; All rights reserved @2022 </h6>
+    </nav>
+  </footer>
+<script>
+  function s(){
+    var inputsq = document.getElementsByClassName("forminp").length;
+    for(var i=0;i<inputsq; i++){
+    var inps = document.getElementsByClassName("forminp")[i].value;
+    if(inps==""){
+      inps = document.getElementsByClassName("forminp")[i].focus();
+      alert("All fields should be filled");
+      return false;
+
+    }
+  }
+  
+  }
+ 
+  
+</script>
 <%- include partials/footer.ejs %>

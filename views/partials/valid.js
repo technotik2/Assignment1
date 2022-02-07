@@ -1,0 +1,1 @@
+body('fullname', 'Empty name').trim().isLength({ min: 1 }).escape();
