@@ -72,9 +72,6 @@ body{
     background-color: gray;
     border-radius: 10px;
     padding-left: 5px;
-
-    
-    
 }
 .forminp:hover{
     border: black 3px solid;
@@ -113,7 +110,7 @@ body{
 }
 #ca{
     
-    height: 100%;
+    height: auto;
     width: 50%;
     margin: 15px auto;
     padding: 10px;
@@ -147,7 +144,6 @@ body{
     left: 10%;
     right: 10%;
     margin-top: 100px;
-    
     padding-bottom: 10px;
 }
 /* Style the Image Used to Trigger the Modal */
@@ -157,24 +153,21 @@ body{
     transition: 0.3s;
     margin: 15px;
   }
-  
   #myImg:hover {opacity: 0.7;}
-  
   /* The Modal (background) */
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
   }
-  
   /* Modal Content (Image) */
   .modal-content {
     margin: auto;
@@ -183,10 +176,6 @@ body{
     max-width: 700px;
     
   }
-  
-
-  
-  /* Add Animation - Zoom in the Modal */
   .modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
@@ -197,7 +186,7 @@ body{
     to {transform:scale(1)}
   }
   
-  /* The Close Button */
+ 
   .close {
     position: absolute;
     top: 15px;
@@ -215,13 +204,13 @@ body{
     cursor: pointer;
   }
   
-  /* 100% Image Width on Smaller Screens */
+ 
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
   }
-  /* *********** */
+
   #myImg2 {
     border-radius: 10px;
     cursor: pointer;
@@ -231,19 +220,19 @@ body{
   
   #myImg2:hover {opacity: 0.7;}
   
-  /* The Modal (background) */
+
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
   }
   
   /* Modal Content (Image) */
@@ -298,4 +287,22 @@ body{
       top: 65px;
       position:absolute;
      
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-container > div {
+    border: #f1f1f1 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    color: #202020;
+  }
+  #webdev{
+    width: 350px;
+    height: 150px;
   }
