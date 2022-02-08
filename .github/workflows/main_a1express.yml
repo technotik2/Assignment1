@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'A1express'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C98E69F9BF9945888248987B3BC301F7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0730CB1A8BA44C23BB1C76CAB80596C5 }}
           package: .
