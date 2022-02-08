@@ -146,8 +146,9 @@ body{
     position: relative;
     left: 10%;
     right: 10%;
-    margin-top: 100px;
+    margin-top: 30px;
     padding-bottom: 10px;
+    text-align: center;
 }
 /* Style the Image Used to Trigger the Modal */
 #myImg {
