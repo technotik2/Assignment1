@@ -3,7 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": "^12.18.3",
@@ -19,7 +24,8 @@
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
     "morgan": "~1.9.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "serve": "^13.0.2"
   },
   "description": "express portfolio",
   "main": "server.js",
@@ -32,6 +38,5 @@
   "bugs": {
     "url": "https://github.com/technotik2/Assignment1.git"
   },
-  "homepage": "https://github.com/technotik2/Assignment1.git",
-  "devDependencies": {}
+  "homepage": "https://github.com/technotik2/Assignment1.git"
 }
