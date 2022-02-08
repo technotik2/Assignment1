@@ -9,15 +9,13 @@
 <br/>
 <a href="mailto:peymanth27@gmail.com" style="margin-left: 3px; font-size: 14px;">peymanth27@gmail.com</a>
 <br/>
-
 <img src="img\outlook.png" id="gmaillogo">
 <br/>
 <a href="mailto:ptalkhek@mycentennialcollege.ca" style="margin-left: 3px; font-size: 14px;">ptalkhek@mycentennialcollege.ca</a>
 <br/>
 <div id="formcontainer">
 <div style="border: 1px black solid; border-radius: 10px; " id="formheader"><h4 style="padding: 10px;">Want me to contact you ? </h4></div>
-
-<form action="/form" method="post">
+<form action="/" method="post">
     <input type="text" class="forminp" name="fullname" placeholder="Full Name">
     <br>
     <input type="text" class="forminp" name="email" placeholder="Email"><br>
@@ -25,8 +23,6 @@
     <input type="text" class="forminp" name="message" placeholder="Message(300 words)" style="padding-bottom: 150px;">
     <br>
     <input type="submit" class="subbutton" id="btns" style="margin-top: 10px; " onclick="s()">
-
-
 
 </form>
 </div>
@@ -39,6 +35,7 @@
     </nav>
   </footer>
 <script>
+  //This scripts helps in validation user input
   function s(){
     var inputsq = document.getElementsByClassName("forminp").length;
     for(var i=0;i<inputsq; i++){
