@@ -1,5 +1,5 @@
 {
-  "name": "comp229win2022_300986795",
+  "name": "assignment1",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,16 +21,17 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "its a demo website",
+  "description": "express portfolio",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rachitakhare/week3_comp229_sec04.git"
+    "url": "git+https://github.com/technotik2/Assignment1.git"
   },
-  "author": "Rachita Khare - 3009867965",
+  "author": "Peyman Talkhekar - 301165495",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rachitakhare/week3_comp229_sec04/issues"
+    "url": "https://github.com/technotik2/Assignment1.git"
   },
-  "homepage": "https://github.com/rachitakhare/week3_comp229_sec04#readme"
+  "homepage": "https://github.com/technotik2/Assignment1.git",
+  "devDependencies": {}
 }
