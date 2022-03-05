@@ -6,22 +6,34 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('../routes/index');
+var usersRouter = require('../routes/users');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
 
+//database setup
+let mongoose = require('mongoose');
+let DB = require('./db');
+//point mongoos eto database url
+mongoose.connect(DB.URL, {UseNewUrlParser: true, UseUnifiedTopology: true});
+let mongooseDB = mongoose.connection;
+mongooseDB.on('error', console.error.bind(console, 'Connection Error: '));
+mongooseDB.once('open', ()=>{
+  console.log('Connected to db');
+
+
+});
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 //added static path to node_modules
-app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use(express.static(path.join(__dirname, '../node_modules')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

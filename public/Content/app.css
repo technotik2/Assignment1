@@ -310,3 +310,8 @@ body{
     width: 350px;
     height: 150px;
   }
+  .logininp{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #282828;
+  }

@@ -1,5 +1,8 @@
 var express = require('express');
 var router = express.Router();
+let express = require('express');
+let nodemailer = require('nodemailer');
+let config = require('config');
 router.get('/', function (req, res) {
   res.render('Home', { title: 'Home' });
 });
@@ -22,5 +25,8 @@ router.get('/projects', function(req, res, next) {
 /* GET Contact page. */
 router.get('/contact', function(req, res) {
   res.render('Contact', { title: 'Contact' });
+});
+router.get('/login', function(req, res) {
+  res.render('Login', { title: 'Login Page' });
 });
 module.exports = router;
